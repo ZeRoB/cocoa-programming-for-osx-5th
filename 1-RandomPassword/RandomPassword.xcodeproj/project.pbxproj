@@ -59,9 +59,9 @@
 				5552AB9B20456D52006624A2 /* Assets.xcassets */,
 				5552ABA020456D52006624A2 /* Info.plist */,
 				5552AB9D20456D52006624A2 /* MainMenu.xib */,
-				5552ABA120456D52006624A2 /* RandomPassword.entitlements */,
 				D4D30F5C2048A8210016EFC4 /* MainWindowController.swift */,
 				D4D30F5D2048A8210016EFC4 /* MainWindowController.xib */,
+				5552ABA120456D52006624A2 /* RandomPassword.entitlements */,
 			);
 			path = RandomPassword;
 			sourceTree = "<group>";
