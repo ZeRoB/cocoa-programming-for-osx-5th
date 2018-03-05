@@ -10,6 +10,7 @@
 		5552AB9A20456D52006624A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552AB9920456D52006624A2 /* AppDelegate.swift */; };
 		5552AB9C20456D52006624A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5552AB9B20456D52006624A2 /* Assets.xcassets */; };
 		5552AB9F20456D52006624A2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5552AB9D20456D52006624A2 /* MainMenu.xib */; };
+		5552ABB8204DA6C3006624A2 /* GeneratePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552ABB7204DA6C3006624A2 /* GeneratePassword.swift */; };
 		D4D30F5E2048A8210016EFC4 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D30F5C2048A8210016EFC4 /* MainWindowController.swift */; };
 		D4D30F5F2048A8210016EFC4 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4D30F5D2048A8210016EFC4 /* MainWindowController.xib */; };
 /* End PBXBuildFile section */
@@ -21,6 +22,7 @@
 		5552AB9E20456D52006624A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5552ABA020456D52006624A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5552ABA120456D52006624A2 /* RandomPassword.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RandomPassword.entitlements; sourceTree = "<group>"; };
+		5552ABB7204DA6C3006624A2 /* GeneratePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePassword.swift; sourceTree = "<group>"; };
 		D4D30F5C2048A8210016EFC4 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		D4D30F5D2048A8210016EFC4 /* MainWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +64,7 @@
 				D4D30F5C2048A8210016EFC4 /* MainWindowController.swift */,
 				D4D30F5D2048A8210016EFC4 /* MainWindowController.xib */,
 				5552ABA120456D52006624A2 /* RandomPassword.entitlements */,
+				5552ABB7204DA6C3006624A2 /* GeneratePassword.swift */,
 			);
 			path = RandomPassword;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4D30F5E2048A8210016EFC4 /* MainWindowController.swift in Sources */,
+				5552ABB8204DA6C3006624A2 /* GeneratePassword.swift in Sources */,
 				5552AB9A20456D52006624A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
