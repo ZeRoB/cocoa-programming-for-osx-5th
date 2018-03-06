@@ -56,8 +56,8 @@ if let r1 = reading1, let r2 = reading2, let r3 = reading3 {
     let errorString = "Instrument reported a reading that was nil."
 }
 
-enum PieType {
-    case Apple, Cherry, Pecan
+enum PieType: Int {
+    case Apple = 0, Cherry, Pecan
 }
 let favouritePie = PieType.Apple
 var piesToBake: [PieType] = []
@@ -71,6 +71,11 @@ case .Cherry:
     name = "Cherry"
 case .Pecan:
     name = "Pecan"
+}
+
+let pieRawValue = PieType.Pecan.rawValue
+if let pieType = PieType(rawValue: pieRawValue) {
+    // Got a valid 'pieType'!
 }
 
 
