@@ -24,6 +24,9 @@ let nameByParkingSpace = [13: "Alice", 27: "Bob"]
 if let spaceAssignee = nameByParkingSpace[13] {
     print("Key 13 was in the dicitonary!")
 }
+for (space, name) in nameByParkingSpace {
+    let permit = "Space \(space): \(name)"
+}
 
 let emptyString = String()
 emptyString.isEmpty
