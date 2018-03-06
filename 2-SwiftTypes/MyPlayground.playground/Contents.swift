@@ -56,8 +56,22 @@ if let r1 = reading1, let r2 = reading2, let r3 = reading3 {
     let errorString = "Instrument reported a reading that was nil."
 }
 
+enum PieType {
+    case Apple, Cherry, Pecan
+}
+let favouritePie = PieType.Apple
+var piesToBake: [PieType] = []
+piesToBake.append(.Apple)
 
-
+let name: String
+switch favouritePie {
+case .Apple:
+    name = "Apple"
+case .Cherry:
+    name = "Cherry"
+case .Pecan:
+    name = "Pecan"
+}
 
 
 
