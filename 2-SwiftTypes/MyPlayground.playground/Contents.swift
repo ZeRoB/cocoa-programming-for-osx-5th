@@ -21,6 +21,9 @@ countingUp.append("three")
 let countingDown = countingUp.reversed()
 let secondElement = countingUp[1]
 let nameByParkingSpace = [13: "Alice", 27: "Bob"]
+if let spaceAssignee = nameByParkingSpace[13] {
+    print("Key 13 was in the dicitonary!")
+}
 
 let emptyString = String()
 emptyString.isEmpty
