@@ -29,6 +29,10 @@ class Particle {
     init(position: Vector) {
         self.position = position
     }
+    
+    convenience init() {
+        self.init(position: Vector())
+    }
 }
 
 func +(left: Vector, right: Vector) -> Vector {
