@@ -14,8 +14,12 @@ struct Vector {
         self.x = x
         self.y = y
     }
+    
+    func vectoreByAddingVector(vector: Vector) -> Vector {
+        return Vector(x: x + vector.x,
+                      y: y + vector.y)
+    }
 }
 
 let gravity  = Vector(x: 0.0, y: -9.8)
-gravity.x
-gravity.y
+let twoGs = gravity.vectoreByAddingVector(vector: gravity)
