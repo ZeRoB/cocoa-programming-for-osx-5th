@@ -21,5 +21,13 @@ struct Vector {
     }
 }
 
+func +(left: Vector, right: Vector) -> Vector {
+    return left.vectoreByAddingVector(vector: right)
+}
+func *(left: Vector, right: Double) -> Vector {
+    return Vector(x: left.x * right, y: left.y * right)
+}
+
 let gravity  = Vector(x: 0.0, y: -9.8)
-let twoGs = gravity.vectoreByAddingVector(vector: gravity)
+let twoGs = gravity + gravity
+let twoGsAlso = gravity * 2.0
