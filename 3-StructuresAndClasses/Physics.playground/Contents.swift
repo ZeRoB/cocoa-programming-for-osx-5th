@@ -21,6 +21,16 @@ struct Vector {
     }
 }
 
+class Particle {
+    var position: Vector
+    var velocity: Vector = Vector()
+    var acceleration: Vector = Vector()
+    
+    init(position: Vector) {
+        self.position = position
+    }
+}
+
 func +(left: Vector, right: Vector) -> Vector {
     return left.vectoreByAddingVector(vector: right)
 }
