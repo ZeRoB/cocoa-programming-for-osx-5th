@@ -5,6 +5,9 @@ import Cocoa
 struct Vector {
     var x: Double
     var y: Double
+    var length: Double {
+        return sqrt(x * x + y * y)
+    }
 
     init() {
         self.init(x: 0, y: 0)
