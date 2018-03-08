@@ -2,7 +2,7 @@
 
 import Cocoa
 
-struct Vector {
+struct Vector: CustomStringConvertible{
     var x: Double
     var y: Double
     var length: Double {
@@ -22,6 +22,10 @@ struct Vector {
         return Vector(x: x + vector.x,
                       y: y + vector.y)
     }
+    
+    var description: String {
+        return "(\(x), \(y))"
+    }
 }
 
 func +(left: Vector, right: Vector) -> Vector {
@@ -34,6 +38,7 @@ func *(left: Vector, right: Double) -> Vector {
 let gravity  = Vector(x: 0.0, y: -9.8)
 let twoGs = gravity + gravity
 let twoGsAlso = gravity * 2.0
+print("Gravity is \(gravity)")
 
 class Particle {
     var position: Vector
