@@ -57,11 +57,11 @@
 			children = (
 				55C238002056EAA800DE3879 /* AppDelegate.swift */,
 				55C238022056EAA800DE3879 /* Assets.xcassets */,
-				55C238042056EAA800DE3879 /* MainMenu.xib */,
 				55C238072056EAA800DE3879 /* Info.plist */,
-				55C238082056EAA800DE3879 /* RGBWell.entitlements */,
+				55C238042056EAA800DE3879 /* MainMenu.xib */,
 				55C2380E2056EBB300DE3879 /* MainWindowController.swift */,
 				55C238102056EC2700DE3879 /* MainWindowController.xib */,
+				55C238082056EAA800DE3879 /* RGBWell.entitlements */,
 			);
 			path = RGBWell;
 			sourceTree = "<group>";
