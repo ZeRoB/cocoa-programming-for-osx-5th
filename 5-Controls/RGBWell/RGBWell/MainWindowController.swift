@@ -9,6 +9,8 @@
 import Cocoa
 
 class MainWindowController: NSWindowController {
+    @IBOutlet weak var colorWell: NSColorWell!
+    
     override var windowNibName: NSNib.Name? {
         return NSNib.Name(rawValue: "MainWindowController")
     }
