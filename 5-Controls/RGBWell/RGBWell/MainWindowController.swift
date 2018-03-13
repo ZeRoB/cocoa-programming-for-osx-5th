@@ -13,6 +13,6 @@ class MainWindowController: NSWindowController {
         return NSNib.Name(rawValue: "MainWindowController")
     }
     @IBAction func adjustRed(_ sender: NSSlider) {
-        print("R slider's value is \(sender.integerValue)")
+        print("R slider's value is \(sender.floatValue)")
     }
 }
