@@ -7,7 +7,10 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="RGBWell" customModuleProvider="target">
             <connections>
+                <outlet property="bSlider" destination="gUb-Xn-Boc" id="6ty-R7-bI8"/>
                 <outlet property="colorWell" destination="AaQ-Q5-gHN" id="CgX-R8-iVD"/>
+                <outlet property="gSlider" destination="vJX-Th-mfb" id="qJs-E0-Iz1"/>
+                <outlet property="rSlider" destination="xKz-gY-96m" id="dQf-zU-vv9"/>
                 <outlet property="window" destination="86N-rN-8bS" id="FzA-QV-geW"/>
             </connections>
         </customObject>
@@ -25,7 +28,7 @@
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xKz-gY-96m">
                         <rect key="frame" x="293" y="188" width="96" height="19"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="cbl-H3-oRr"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="cbl-H3-oRr"/>
                         <connections>
                             <action selector="adjustRed:" target="-2" id="zfF-3h-J3j"/>
                         </connections>
@@ -42,7 +45,7 @@
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vJX-Th-mfb">
                         <rect key="frame" x="293" y="163" width="96" height="19"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="yS6-qf-WJD"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="yS6-qf-WJD"/>
                         <connections>
                             <action selector="adjustGreen:" target="-2" id="Dal-Za-H7C"/>
                         </connections>
@@ -59,7 +62,7 @@
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUb-Xn-Boc">
                         <rect key="frame" x="293" y="139" width="96" height="19"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="AVc-WG-hYF"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="AVc-WG-hYF"/>
                         <connections>
                             <action selector="adjustBluw:" target="-2" id="M9f-NT-ZSf"/>
                         </connections>
@@ -76,7 +79,7 @@
                     <colorWell fixedFrame="YES" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaQ-Q5-gHN">
                         <rect key="frame" x="67" y="140" width="146" height="66"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </colorWell>
                 </subviews>
             </view>
