@@ -12,7 +12,6 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     var mainWindowController: MainWindowController?
-    
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create a window controller
