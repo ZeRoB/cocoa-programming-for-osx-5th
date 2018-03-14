@@ -31,7 +31,9 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
         super.windowDidLoad()
         updateButtons()
         speechSynth.delegate = self
-        print(voices)
+        for voice in voices {
+            print("\(voiceNameFor(identifier: voice))")
+        }
     }
     
     // MARK: - Action methods
@@ -59,6 +61,11 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
             stopButton.isEnabled = false
             speakButton.isEnabled = true
         }
+    }
+    
+    func voiceNameFor(identifier: NSSpeechSynthesizer.VoiceName) -> String? {
+        let attributes = NSSpeechSynthesizer.attributes(forVoice: identifier)
+        return attributes[.name] as? String
     }
     
     // MARK: - NSSpeechSynthesizerDelegate
