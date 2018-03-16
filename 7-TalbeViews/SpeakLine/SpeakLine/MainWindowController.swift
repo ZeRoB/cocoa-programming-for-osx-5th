@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSWindowDelegate {
+class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSWindowDelegate, NSTableViewDataSource {
     
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var speakButton: NSButton!
