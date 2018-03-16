@@ -32,7 +32,7 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
         updateButtons()
         speechSynth.delegate = self
         for voice in voices {
-            print("\(voiceNameFor(identifier: voice))")
+            print("\(voiceNameFor(identifier: voice) ?? "Error - No Name")")
         }
     }
     
