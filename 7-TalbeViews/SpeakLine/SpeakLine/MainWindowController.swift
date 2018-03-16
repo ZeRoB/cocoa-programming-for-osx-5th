@@ -81,4 +81,16 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
         return !isStarted
     }
     
+    // MARK: - NSTableViewDataSource
+    
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return voices.count
+    }
+    
+    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        let voice = voices[row]
+        let voiceName = voiceNameFor(identifier: voice)
+        return voiceName
+    }
+    
 }
