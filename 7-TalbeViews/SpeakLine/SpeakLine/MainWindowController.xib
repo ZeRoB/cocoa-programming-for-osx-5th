@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="speakButton" destination="v3x-W7-9CO" id="HDc-0W-QCY"/>
                 <outlet property="stopButton" destination="a4X-fn-Tn0" id="zg0-Wu-Ats"/>
+                <outlet property="tableView" destination="b5n-AO-rKw" id="y2A-FD-who"/>
                 <outlet property="textField" destination="VMB-XT-2fR" id="a8R-S6-bA5"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>

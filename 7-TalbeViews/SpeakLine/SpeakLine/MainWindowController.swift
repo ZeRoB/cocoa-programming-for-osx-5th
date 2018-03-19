@@ -13,6 +13,7 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var speakButton: NSButton!
     @IBOutlet weak var stopButton: NSButton!
+    @IBOutlet weak var tableView: NSTableView!
     
     let speechSynth = NSSpeechSynthesizer()
     let voices = NSSpeechSynthesizer.availableVoices
