@@ -86,6 +86,7 @@
                                     </tableColumns>
                                     <connections>
                                         <outlet property="dataSource" destination="-2" id="MfH-VK-hr7"/>
+                                        <outlet property="delegate" destination="-2" id="gPe-j7-AP9"/>
                                     </connections>
                                 </tableView>
                             </subviews>

@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSWindowDelegate, NSTableViewDataSource {
+class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSWindowDelegate, NSTableViewDataSource, NSTableViewDelegate {
     
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var speakButton: NSButton!
@@ -92,5 +92,9 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
         let voiceName = voiceNameFor(identifier: voice)
         return voiceName
     }
+    
+    // MARK: - NSTableViewDelegate
+    
+    
     
 }
