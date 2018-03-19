@@ -96,6 +96,16 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
     
     // MARK: - NSTableViewDelegate
     
-    
+    func tableViewSelectionDidChange(_ notification: Notification) {
+        let row = tableView.selectedRow
+        
+        // Set the voice back to the default if the user has deselected all rows
+        if row == -1 {
+            speechSynth.setVoice(nil)
+            return
+        }
+        let voice = voices[row]
+        speechSynth.setVoice(voice)
+    }
     
 }
