@@ -35,6 +35,12 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
         for voice in voices {
             print("\(voiceNameFor(identifier: voice) ?? "Error - No Name")")
         }
+        let defaultVoice = NSSpeechSynthesizer.defaultVoice
+        if let defaultRow = voices.index(of: defaultVoice) {
+            let indices = IndexSet(integer: defaultRow)
+            tableView.selectRowIndexes(indices, byExtendingSelection: false)
+            tableView.scrollRowToVisible(defaultRow)
+        }
     }
     
     // MARK: - Action methods
