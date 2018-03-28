@@ -10,6 +10,8 @@ import Cocoa
 
 class MainWindowController: NSWindowController {
 
+    @objc var temperature = 68
+    
     override var windowNibName: NSNib.Name? {
         return NSNib.Name(rawValue: "MainWindowController")
     }

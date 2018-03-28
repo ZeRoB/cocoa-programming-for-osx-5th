@@ -56,11 +56,11 @@
 			isa = PBXGroup;
 			children = (
 				55C5DA97206BBE3700C9805A /* AppDelegate.swift */,
+				55C5DA99206BBE3700C9805A /* Assets.xcassets */,
+				55C5DA9E206BBE3700C9805A /* Info.plist */,
+				55C5DA9B206BBE3700C9805A /* MainMenu.xib */,
 				55C5DAA5206BBE9600C9805A /* MainWindowController.swift */,
 				55C5DAA6206BBE9600C9805A /* MainWindowController.xib */,
-				55C5DA99206BBE3700C9805A /* Assets.xcassets */,
-				55C5DA9B206BBE3700C9805A /* MainMenu.xib */,
-				55C5DA9E206BBE3700C9805A /* Info.plist */,
 				55C5DA9F206BBE3700C9805A /* Thermostat.entitlements */,
 			);
 			path = Thermostat;
