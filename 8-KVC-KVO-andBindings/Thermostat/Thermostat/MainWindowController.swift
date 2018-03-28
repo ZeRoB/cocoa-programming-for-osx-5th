@@ -21,5 +21,13 @@ class MainWindowController: NSWindowController {
 
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     }
+    @IBAction func makeWarmer(_ sender: NSButton) {
+        let newTemperature = temperature + 1
+        setValue(newTemperature, forKey: "temperature")
+    }
     
+    @IBAction func makeCooler(_ sender: NSButton) {
+        let newTemperature = temperature - 1
+        setValue(newTemperature, forKey: "temperature")
+    }
 }
