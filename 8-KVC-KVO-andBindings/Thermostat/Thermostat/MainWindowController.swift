@@ -9,8 +9,18 @@
 import Cocoa
 
 class MainWindowController: NSWindowController {
-
-    @objc dynamic var temperature = 68
+    
+    private var privateTemperature = 68
+    @objc dynamic var temperature: Int {
+        set {
+            print("set temperature to \(newValue)")
+            privateTemperature = newValue
+        }
+        get {
+            print("get temperature")
+            return privateTemperature
+        }
+    }
     @objc dynamic var isOn = true
     
     override var windowNibName: NSNib.Name? {
