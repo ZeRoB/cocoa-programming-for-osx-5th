@@ -26,6 +26,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="apv-3C-Yyr"/>
                         <connections>
+                            <binding destination="-2" name="enabled" keyPath="isOn" id="Kr5-wu-8YC"/>
                             <binding destination="-2" name="value" keyPath="temperature" id="0zU-Ux-dIs"/>
                         </connections>
                     </slider>
@@ -42,7 +43,7 @@
                         </connections>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mV6-po-pHi">
-                        <rect key="frame" x="81" y="115" width="88" height="32"/>
+                        <rect key="frame" x="77" y="97" width="88" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Warmer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="o9p-3J-ohV">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -50,10 +51,11 @@
                         </buttonCell>
                         <connections>
                             <action selector="makeWarmer:" target="-2" id="cA9-SJ-qGM"/>
+                            <binding destination="-2" name="enabled" keyPath="isOn" id="x9e-gJ-EIy"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NxR-1K-a5U">
-                        <rect key="frame" x="85" y="43" width="80" height="32"/>
+                        <rect key="frame" x="81" y="64" width="80" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Cooler" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="p8C-2Z-w6m">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -61,6 +63,18 @@
                         </buttonCell>
                         <connections>
                             <action selector="makeCooler:" target="-2" id="CuP-Rv-IyJ"/>
+                            <binding destination="-2" name="enabled" keyPath="isOn" id="Ui6-6a-0Kt"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eIy-69-ZIE">
+                        <rect key="frame" x="78" y="19" width="81" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="recessed" title="Power" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uel-i8-85p">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                            <font key="font" metaFont="systemBold" size="12"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="isOn" id="jPN-J1-enN"/>
                         </connections>
                     </button>
                 </subviews>
@@ -70,5 +84,6 @@
             </connections>
             <point key="canvasLocation" x="-11.5" y="125"/>
         </window>
+        <userDefaultsController representsSharedInstance="YES" id="xTj-2V-MTJ"/>
     </objects>
 </document>
