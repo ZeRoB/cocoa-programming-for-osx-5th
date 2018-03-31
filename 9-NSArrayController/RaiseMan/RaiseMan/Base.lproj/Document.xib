@@ -142,6 +142,10 @@
             </connections>
             <point key="canvasLocation" x="81.5" y="175.5"/>
         </window>
-        <arrayController objectClassName="RaiseMan.Employee" id="Q6N-4s-Pj5"/>
+        <arrayController objectClassName="RaiseMan.Employee" id="Q6N-4s-Pj5">
+            <connections>
+                <binding destination="-2" name="contentArray" keyPath="employees" id="goC-U6-WXX"/>
+            </connections>
+        </arrayController>
     </objects>
 </document>
