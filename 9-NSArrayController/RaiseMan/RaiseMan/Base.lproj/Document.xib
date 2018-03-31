@@ -103,6 +103,9 @@
                                             </prototypeCellViews>
                                         </tableColumn>
                                     </tableColumns>
+                                    <connections>
+                                        <binding destination="Q6N-4s-Pj5" name="content" keyPath="arrangedObjects" id="zew-ns-NRQ"/>
+                                    </connections>
                                 </tableView>
                             </subviews>
                         </clipView>
