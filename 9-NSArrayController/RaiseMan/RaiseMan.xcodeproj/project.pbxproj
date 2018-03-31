@@ -12,6 +12,7 @@
 		D4718A2F206F96CB0093C7BC /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4718A2D206F96CB0093C7BC /* Document.xib */; };
 		D4718A31206F96CB0093C7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4718A30206F96CB0093C7BC /* Assets.xcassets */; };
 		D4718A34206F96CC0093C7BC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4718A32206F96CC0093C7BC /* MainMenu.xib */; };
+		D4718A3D206F97670093C7BC /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4718A3C206F97670093C7BC /* Employee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D4718A33206F96CC0093C7BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D4718A35206F96CC0093C7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4718A36206F96CC0093C7BC /* RaiseMan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RaiseMan.entitlements; sourceTree = "<group>"; };
+		D4718A3C206F97670093C7BC /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +58,13 @@
 			isa = PBXGroup;
 			children = (
 				D4718A29206F96CB0093C7BC /* AppDelegate.swift */,
+				D4718A30206F96CB0093C7BC /* Assets.xcassets */,
 				D4718A2B206F96CB0093C7BC /* Document.swift */,
 				D4718A2D206F96CB0093C7BC /* Document.xib */,
-				D4718A30206F96CB0093C7BC /* Assets.xcassets */,
-				D4718A32206F96CC0093C7BC /* MainMenu.xib */,
 				D4718A35206F96CC0093C7BC /* Info.plist */,
+				D4718A32206F96CC0093C7BC /* MainMenu.xib */,
 				D4718A36206F96CC0093C7BC /* RaiseMan.entitlements */,
+				D4718A3C206F97670093C7BC /* Employee.swift */,
 			);
 			path = RaiseMan;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4718A2C206F96CB0093C7BC /* Document.swift in Sources */,
+				D4718A3D206F97670093C7BC /* Employee.swift in Sources */,
 				D4718A2A206F96CB0093C7BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
