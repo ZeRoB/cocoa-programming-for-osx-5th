@@ -129,6 +129,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="add:" target="Q6N-4s-Pj5" id="NEb-lL-69v"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="498-rX-YRC">
                         <rect key="frame" x="262" y="124" width="115" height="32"/>
