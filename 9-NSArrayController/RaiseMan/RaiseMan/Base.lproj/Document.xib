@@ -149,6 +149,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="remove:" target="Q6N-4s-Pj5" id="MBB-gR-Fcd"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
