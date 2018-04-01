@@ -149,9 +149,13 @@
                         <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4AQ-gK-nbU">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+CA
+</string>
                         </buttonCell>
                         <connections>
                             <action selector="remove:" target="Q6N-4s-Pj5" id="MBB-gR-Fcd"/>
+                            <binding destination="Q6N-4s-Pj5" name="enabled" keyPath="canRemove" id="ndQ-2f-sLK"/>
                         </connections>
                     </button>
                 </subviews>
