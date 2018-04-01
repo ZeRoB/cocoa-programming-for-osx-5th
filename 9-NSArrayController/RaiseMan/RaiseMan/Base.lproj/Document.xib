@@ -114,6 +114,7 @@
                                     </tableColumns>
                                     <connections>
                                         <binding destination="Q6N-4s-Pj5" name="content" keyPath="arrangedObjects" id="zew-ns-NRQ"/>
+                                        <binding destination="Q6N-4s-Pj5" name="selectionIndexes" keyPath="selectionIndexes" previousBinding="zew-ns-NRQ" id="axV-Or-nIO"/>
                                     </connections>
                                 </tableView>
                             </subviews>
